@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<TextView
+		android:text="List of Posts"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="4dp"
+		android:layout_margin="4dp"
+		android:id="@+id/listTitleTextView" />
+	<Button
+		android:text="Get Posts"
+		android:id="@+id/getPostsButton"
+		android:layout_below="@id/listTitleTextView"
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="4dp"
+		android:layout_margin="4dp"/>
+	<android.support.v7.widget.RecyclerView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_margin="12dp"
+		android:id="@+id/recyclerView1"
+		android:layout_below="@id/getPostsButton"
+		android:scrollbars="vertical"/>
+</RelativeLayout>
